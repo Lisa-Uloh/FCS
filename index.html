@@ -353,32 +353,38 @@
                                         <h2
                                             style=" font-size: 18px; text-align: center; color: #000000; font-weight: 500;">
                                             voluteer Form</h2>
-                                        <form
+                                        <form action="mailForm.php" method="post" id="contact-form"
                                             style=" padding-left: 15%; padding-right: 15%;padding-bottom: 15%; padding-top: 6%;">
+
                                             <label style="color: #000000;">Name</label>
                                             <br>
-                                            <input type="text" class="form-control"
+                                            <input type="text" name="name" class="form-control"
                                                 style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
                                             <br>
                                             <label style="color: #000000;">Phone Number</label>
 
-                                            <input type="text" class="form-control"
+                                            <input type="text" name="phone" class="form-control"
                                                 style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000; margin-top: -10px;">
                                             <br>
 
                                             <label style="color: #000000;">Email Address</label>
                                             <br>
-                                            <input type="text" class="form-control"
+                                            <input type="text" name="email" class="form-control"
+                                                style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid#000000;margin-top: -10px;">
+                                            <br>
+                                            <label style="color: #000000;">State of Residence</label>
+                                            <br>
+                                            <input type="text" name="residence" class="form-control"
                                                 style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid#000000;margin-top: -10px;">
                                             <br>
                                             <label style="color: #000000;">Please Enter Your Message</label>
                                             <br>
-                                            <input type="text" class="form-control"
+                                            <input type="text" name="message" class="form-control"
                                                 style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
 
                                             <br>
                                             <br>
-                                            <button class="btn btn-primary"
+                                            <button class="btn btn-primary" type="submit"
                                                 style="width: 100%; border-radius: 10px; margin-top: 30px; height: 50px;">
                                                 Submit</button>
                                         </form>
@@ -820,8 +826,8 @@
                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                         </div>
                         <div class="team_name">
-                            <h4>Stanley Godwin</h4>
-                            <p></p>
+                            <h4>Ahua Godwin</h4>
+                            <p>godwin@ahuagodwin.com</p>
                             <p class="mt-10">
                                 08138885517
                             </p>
@@ -966,6 +972,64 @@
             $("#myModal").modal("toggle");
 
         })
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script>
+        const constraints = {
+            name: {
+                presence: {
+                    allowEmpty: false
+                }
+            },
+            phone: {
+                presence: {
+                    allowEmpty: false
+                }
+            },
+            email: {
+                presence: {
+                    allowEmpty: false
+                },
+                email: true
+            },
+            residence: {
+                presence: {
+                    allowEmpty: false
+                }
+            },
+            message: {
+                presence: {
+                    allowEmpty: false
+                }
+            }
+        };
+
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', function (event) {
+            const formValues = {
+                name: form.elements.name.value,
+                phone: form.elements.phone.value,
+                email: form.elements.email.value,
+                residence: form.elements.residence.value,
+                message: form.elements.message.value
+
+            };
+
+            const errors = validate(formValues, constraints);
+
+            if (errors) {
+                event.preventDefault();
+                const errorMessage = Object
+                    .values(errors)
+                    .map(function (fieldValues) {
+                        return fieldValues.join(', ')
+                    })
+                    .join("\n");
+
+                alert(errorMessage);
+            }
+        }, false);
     </script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/index.js">
