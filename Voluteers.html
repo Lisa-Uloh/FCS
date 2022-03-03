@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>ForChristSake</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/voluteer.css" />
+</head>
+
+<body>
+    <header class="header_area">
+        <div class="main_menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+
+                        <a class="navbar-brand logo_h" href="index.html">
+                            <script data-pagespeed-no-defer>
+                                //<![CDATA[
+                                (function () {
+                                    for (var g = "function" == typeof Object.defineProperties ? Object
+                                            .defineProperty : function (b, c, a) {
+                                                if (a.get || a.set) throw new TypeError(
+                                                    "ES3 does not support getters and setters.");
+                                                b != Array.prototype && b != Object.prototype && (b[c] = a.value)
+                                            }, h = "undefined" != typeof window && window === this ? this :
+                                            "undefined" != typeof global && null != global ? global : this, k = [
+                                                "String", "prototype", "repeat"
+                                            ], l = 0; l < k.length - 1; l++) {
+                                        var m = k[l];
+                                        m in h || (h[m] = {});
+                                        h = h[m]
+                                    }
+                                    var n = k[k.length - 1],
+                                        p = h[n],
+                                        q = p ? p : function (b) {
+                                            var c;
+                                            if (null == this) throw new TypeError(
+                                                "The 'this' value for String.prototype.repeat must not be null or undefined"
+                                            );
+                                            c = this + "";
+                                            if (0 > b || 1342177279 < b) throw new RangeError(
+                                                "Invalid count value");
+                                            b |= 0;
+                                            for (var a = ""; b;)
+                                                if (b & 1 && (a += c), b >>>= 1) c += c;
+                                            return a
+                                        };
+                                    q != p && null != q && g(h, n, {
+                                        configurable: !0,
+                                        writable: !0,
+                                        value: q
+                                    });
+                                    var t = this;
+
+                                    function u(b, c) {
+                                        var a = b.split("."),
+                                            d = t;
+                                        a[0] in d || !d.execScript || d.execScript("var " + a[0]);
+                                        for (var e; a.length && (e = a.shift());) a.length || void 0 === c ? d[e] ?
+                                            d = d[e] : d = d[e] = {} : d[e] = c
+                                    };
+
+                                    function v(b) {
+                                        var c = b.length;
+                                        if (0 < c) {
+                                            for (var a = Array(c), d = 0; d < c; d++) a[d] = b[d];
+                                            return a
+                                        }
+                                        return []
+                                    };
+
+                                    function w(b) {
+                                        var c = window;
+                                        if (c.addEventListener) c.addEventListener("load", b, !1);
+                                        else if (c.attachEvent) c.attachEvent("onload", b);
+                                        else {
+                                            var a = c.onload;
+                                            c.onload = function () {
+                                                b.call(this);
+                                                a && a.call(this)
+                                            }
+                                        }
+                                    };
+                                    var x;
+
+                                    function y(b, c, a, d, e) {
+                                        this.h = b;
+                                        this.j = c;
+                                        this.l = a;
+                                        this.f = e;
+                                        this.g = {
+                                            height: window.innerHeight || document.documentElement
+                                                .clientHeight || document.body.clientHeight,
+                                            width: window.innerWidth || document.documentElement.clientWidth ||
+                                                document.body.clientWidth
+                                        };
+                                        this.i = d;
+                                        this.b = {};
+                                        this.a = [];
+                                        this.c = {}
+                                    }
+
+                                    function z(b, c) {
+                                        var a, d, e = c.getAttribute("data-pagespeed-url-hash");
+                                        if (a = e && !(e in b.c))
+                                            if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1;
+                                            else {
+                                                d = c.getBoundingClientRect();
+                                                var f = document.body;
+                                                a = d.top + ("pageYOffset" in window ? window.pageYOffset : (
+                                                        document.documentElement || f.parentNode || f)
+                                                    .scrollTop);
+                                                d = d.left + ("pageXOffset" in window ? window.pageXOffset : (
+                                                        document.documentElement || f.parentNode || f)
+                                                    .scrollLeft);
+                                                f = a.toString() + "," + d;
+                                                b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g
+                                                    .height && d <= b.g.width)
+                                            } a && (b.a.push(e),
+                                            b.c[e] = !0)
+                                    }
+                                    y.prototype.checkImageForCriticality = function (b) {
+                                        b.getBoundingClientRect && z(this, b)
+                                    };
+                                    u("pagespeed.CriticalImages.checkImageForCriticality", function (b) {
+                                        x.checkImageForCriticality(b)
+                                    });
+                                    u("pagespeed.CriticalImages.checkCriticalImages", function () {
+                                        A(x)
+                                    });
+
+                                    function A(b) {
+                                        b.b = {};
+                                        for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d) a = a
+                                            .concat(v(document.getElementsByTagName(c[d])));
+                                        if (a.length && a[0].getBoundingClientRect) {
+                                            for (d = 0; c = a[d]; ++d) z(b, c);
+                                            a = "oh=" + b.l;
+                                            b.f && (a += "&n=" + b.f);
+                                            if (c = !!b.a.length)
+                                                for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a
+                                                    .length; ++d) {
+                                                    var e = "," + encodeURIComponent(b.a[d]);
+                                                    131072 >= a.length + e.length && (a += e)
+                                                }
+                                            b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >=
+                                                a.length + e.length && (a += e), c = !0);
+                                            C = a;
+                                            if (c) {
+                                                d = b.h;
+                                                b = b.j;
+                                                var f;
+                                                if (window.XMLHttpRequest) f =
+                                                    new XMLHttpRequest;
+                                                else if (window.ActiveXObject) try {
+                                                    f = new ActiveXObject("Msxml2.XMLHTTP")
+                                                } catch (r) {
+                                                    try {
+                                                        f = new ActiveXObject("Microsoft.XMLHTTP")
+                                                    } catch (D) {}
+                                                }
+                                                f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") +
+                                                        "url=" + encodeURIComponent(b)), f.setRequestHeader(
+                                                        "Content-Type", "application/x-www-form-urlencoded"), f
+                                                    .send(a))
+                                            }
+                                        }
+                                    }
+
+                                    function B() {
+                                        var b = {},
+                                            c;
+                                        c = document.getElementsByTagName("IMG");
+                                        if (!c.length) return {};
+                                        var a = c[0];
+                                        if (!("naturalWidth" in a && "naturalHeight" in a)) return {};
+                                        for (var d = 0; a = c[d]; ++d) {
+                                            var e = a.getAttribute("data-pagespeed-url-hash");
+                                            e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth &&
+                                                0 < a.naturalHeight || e in b && a.width >= b[e].o && a
+                                                .height >= b[e].m) && (b[e] = {
+                                                rw: a.width,
+                                                rh: a.height,
+                                                ow: a.naturalWidth,
+                                                oh: a.naturalHeight
+                                            })
+                                        }
+                                        return b
+                                    }
+                                    var C = "";
+                                    u("pagespeed.CriticalImages.getBeaconData", function () {
+                                        return C
+                                    });
+                                    u("pagespeed.CriticalImages.Run", function (b, c, a, d, e, f) {
+                                        var r = new y(b, c, a, e, f);
+                                        x = r;
+                                        d && w(function () {
+                                            window.setTimeout(function () {
+                                                A(r)
+                                            }, 0)
+                                        })
+                                    });
+                                })();
+
+                                //]]>
+                            </script><img src="img/logo.png" style="width: 70px;" alt=""
+                                data-pagespeed-url-hash="1038253697"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav ml-auto">
+                                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html">Mission</a>
+                                <li class="nav-item"><a class="nav-link" href="Voluteers.html">Voluteers</a>
+                                <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false">Events</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" href="#events">Event
+                                                Details</a>
+                                            <!-- <li class="nav-item"><a class="nav-link" href="elements.html">Gallery</a></li> -->
+                                    </ul>
+                                </li>
+                                <!-- <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false">Blog</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog
+                                                Details</a></li>
+                                    </ul>
+                                </li> -->
+                                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="home_banner_area" id="home">
+        <div class="banner_inner">
+            <div class="container">
+                <div class="banner_content">
+                    <!-- <p class="upper_text">Give a hand</p> -->
+                    <h2>Soul winning through outreach.</h2>
+                    <p class="upper_text">
+                        Building a team of Christians with high income skills hence to impact in the targeted souls.
+                    </p>
+
+                    <button type="button" class="primary_btn mr-20" data-toggle="modal"
+                        data-target="#myModal--specialPromo"> Voluteer Now</button>
+                    <!-- <a class="primary_btn yellow_btn text-white" href="causes.html">See Causes</a> -->
+                    <div class="modal fade  " id="myModal--specialPromo" tabindex="-1" role="dialog"
+                        aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel"></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card" style="border: transparent; border-radius: 25px;">
+                                        <h2
+                                            style=" font-size: 18px; text-align: center; color: #000000; font-weight: 500;">
+                                            voluteer Form</h2>
+                                        <form action="https://formspree.io/f/xvolrrjw" method="post" id="contact-form"
+                                            data-netlify="true"
+                                            style=" padding-left: 15%; padding-right: 15%;padding-bottom: 15%; padding-top: 6%;">
+                                            <input type="hidden" name="form-name" value="contact">
+                                            <label style="color: #000000;">Name</label>
+                                            <br>
+                                            <input type="text" name="name" class="form-control"
+                                                style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
+                                            <br>
+                                            <label style="color: #000000;">Phone Number</label>
+
+                                            <input type="text" name="phone" class="form-control"
+                                                style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000; margin-top: -10px;">
+                                            <br>
+
+                                            <label style="color: #000000;">Email Address</label>
+                                            <br>
+                                            <input type="text" name="email" class="form-control"
+                                                style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid#000000;margin-top: -10px;">
+                                            <br>
+                                            <label style="color: #000000;">State of Residence</label>
+                                            <br>
+                                            <input type="text" name="residence" class="form-control"
+                                                style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid#000000;margin-top: -10px;">
+                                            <br>
+                                            <label style="color: #000000;">Please Enter Your Message</label>
+                                            <br>
+                                            <input type="text" name="message" class="form-control"
+                                                style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
+
+                                            <br>
+                                            <br>
+                                            <button class="btn btn-primary" type="submit"
+                                                style="width: 100%; border-radius: 10px; margin-top: 30px; height: 50px;">
+                                                Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="body">
+
+            <!-- tabs -->
+            <div class="sky-tabs sky-tabs-pos-top-left sky-tabs-anim-flip sky-tabs-response-to-icons">
+                <input type="radio" name="sky-tabs" checked id="sky-tab1" class="sky-tab-content-1">
+                <label for="sky-tab1"><span><span><i class="icon-bolt"></i>Lagos</span></span></label>
+
+                <input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
+                <label for="sky-tab2"><span><span><i class="icon-picture"></i>Rivers</span></span></label>
+
+                <input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3">
+                <label for="sky-tab3"><span><span><i class="icon-cogs"></i>Calabar</span></span></label>
+
+                <input type="radio" name="sky-tabs" id="sky-tab4" class="sky-tab-content-4">
+                <label for="sky-tab4"><span><span><i class="icon-globe"></i>Abuja</span></span></label>
+
+                <input type="radio" name="sky-tabs" id="sky-tab4" class="sky-tab-content-4">
+                <label for="sky-tab4"><span><span><i class="icon-globe"></i>Delta</span></span></label>
+
+                <label class="switcher"><span><span><a href="#"><i
+                                    class="icon-reorder"></i>Tabs</a></span></span></label>
+
+                <ul>
+                    <li class="sky-tab-content-1">
+                        <div class="typography">
+                            <h1>Nikola Tesla</h1>
+                            <p>Serbian-American inventor, electrical engineer, mechanical engineer, physicist, and
+                                futurist best known for his contributions to the design of the modern alternating
+                                current (AC) electrical supply system.</p>
+                            <p>Tesla started working in the telephony and electrical fields before emigrating to the
+                                United States in 1884 to work for Thomas Edison. He soon struck out on his own with
+                                financial backers, setting up laboratories/companies to develop a range of electrical
+                                devices. His patented AC induction motor and transformer were licensed by George
+                                Westinghouse, who also hired Tesla as a consultant to help develop an alternating
+                                current system. Tesla is also known for his high-voltage, high-frequency power
+                                experiments in New York and Colorado Springs which included patented devices and
+                                theoretical work used in the invention of radio communication, for his X-ray
+                                experiments, and for his ill-fated attempt at intercontinental wireless transmission in
+                                his unfinished Wardenclyffe Tower project.</p>
+                            <p>Tesla's achievements and his abilities as a showman demonstrating his seemingly
+                                miraculous inventions made him world-famous. Although he made a great deal of money from
+                                his patents, he spent a lot on numerous experiments. He lived for most of his life in a
+                                series of New York hotels although the end of his patent income and eventual bankruptcy
+                                led him to live in diminished circumstances. Tesla still continued to invite the press
+                                to parties he held on his birthday to announce new inventions he was working and make
+                                (sometimes unusual) statements. Because of his pronouncements and the nature of his work
+                                over the years, Tesla gained a reputation in popular culture as the archetypal "mad
+                                scientist". He died in room 3327 of the New Yorker Hotel on 7 January 1943.</p>
+                            <p class="text-right"><em>Find out more about Nikola Tesla from <a
+                                        href="http://en.wikipedia.org/wiki/Nikola_Tesla"
+                                        target="_blank">Wikipedia</a>.</em></p>
+                        </div>
+                    </li>
+
+                    <li class="sky-tab-content-2">
+                        <div class="typography">
+                            <h1>Leonardo da Vinci</h1>
+                            <p>Italian Renaissance polymath: painter, sculptor, architect, musician, mathematician,
+                                engineer, inventor, anatomist, geologist, cartographer, botanist, and writer. His
+                                genius, perhaps more than that of any other figure, epitomized the Renaissance humanist
+                                ideal. Leonardo has often been described as the archetype of the Renaissance Man, a man
+                                of "unquenchable curiosity" and "feverishly inventive imagination". He is widely
+                                considered to be one of the greatest painters of all time and perhaps the most diversely
+                                talented person ever to have lived. According to art historian Helen Gardner, the scope
+                                and depth of his interests were without precedent and "his mind and personality seem to
+                                us superhuman, the man himself mysterious and remote". Marco Rosci states that while
+                                there is much speculation about Leonardo, his vision of the world is essentially logical
+                                rather than mysterious, and that the empirical methods he employed were unusual for his
+                                time.</p>
+                            <p>Born out of wedlock to a notary, Piero da Vinci, and a peasant woman, Caterina, at Vinci
+                                in the region of Florence, Leonardo was educated in the studio of the renowned
+                                Florentine painter, Verrocchio. Much of his earlier working life was spent in the
+                                service of Ludovico il Moro in Milan. He later worked in Rome, Bologna and Venice, and
+                                he spent his last years in France at the home awarded him by Francis I.</p>
+                            <p class="text-right"><em>Find out more about Leonardo da Vinci from <a
+                                        href="http://en.wikipedia.org/wiki/Leonardo_da_Vinci"
+                                        target="_blank">Wikipedia</a>.</em></p>
+                        </div>
+                    </li>
+
+                    <li class="sky-tab-content-3">
+                        <div class="typography">
+                            <h1>Albert Einstein</h1>
+                            <p>German-born theoretical physicist who developed the general theory of relativity, one of
+                                the two pillars of modern physics (alongside quantum mechanics). While best known for
+                                his mass–energy equivalence formula E = mc2 (which has been dubbed "the world's most
+                                famous equation"), he received the 1921 Nobel Prize in Physics "for his services to
+                                theoretical physics, and especially for his discovery of the law of the photoelectric
+                                effect". The latter was pivotal in establishing quantum theory.</p>
+                            <p>Near the beginning of his career, Einstein thought that Newtonian mechanics was no longer
+                                enough to reconcile the laws of classical mechanics with the laws of the electromagnetic
+                                field. This led to the development of his special theory of relativity. He realized,
+                                however, that the principle of relativity could also be extended to gravitational
+                                fields, and with his subsequent theory of gravitation in 1916, he published a paper on
+                                the general theory of relativity.</p>
+                            <p>He continued to deal with problems of statistical mechanics and quantum theory, which led
+                                to his explanations of particle theory and the motion of molecules. He also investigated
+                                the thermal properties of light which laid the foundation of the photon theory of light.
+                                In 1917, Einstein applied the general theory of relativity to model the large-scale
+                                structure of the universe.</p>
+                            <p class="text-right"><em>Find out more about Albert Einstein from <a
+                                        href="http://en.wikipedia.org/wiki/Albert_Einstein"
+                                        target="_blank">Wikipedia</a>.</em></p>
+                        </div>
+                    </li>
+
+                    <li class="sky-tab-content-4">
+                        <div class="typography">
+                            <h1>Isaac Newton</h1>
+                            <p>English physicist and mathematician who is widely regarded as one of the most influential
+                                scientists of all time and as a key figure in the scientific revolution. His book
+                                Philosophiæ Naturalis Principia Mathematica ("Mathematical Principles of Natural
+                                Philosophy"), first published in 1687, laid the foundations for most of classical
+                                mechanics. Newton also made seminal contributions to optics and shares credit with
+                                Gottfried Leibniz for the invention of the infinitesimal calculus.</p>
+                            <p>Newton's Principia formulated the laws of motion and universal gravitation that dominated
+                                scientists' view of the physical universe for the next three centuries. It also
+                                demonstrated that the motion of objects on the Earth and that of celestial bodies could
+                                be described by the same principles. By deriving Kepler's laws of planetary motion from
+                                his mathematical description of gravity, Newton removed the last doubts about the
+                                validity of the heliocentric model of the cosmos.</p>
+                            <p class="text-right"><em>Find out more about Isaac Newton from <a
+                                        href="http://en.wikipedia.org/wiki/Isaac_Newton"
+                                        target="_blank">Wikipedia</a>.</em></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--/ tabs -->
+
+        </div>
+    </section>
+
+
+    <script>
+        (function () { // wrap code in IIFE to keep it from global scope
+            let links = document.querySelectorAll(
+                '.link'); // grab all <a> tags that trigger the image gallery
+            let imageContainer = document.querySelector(
+                '.image-container'); // grab the div that will contain the images
+            let imagesCollection = document.querySelectorAll('.image-container img');
+
+            function displayImage(imgs,
+                album) { // function to check the data-album attr and check against the button that was clicked
+                imgs.forEach((image) => {
+                    if (image.dataset.album == album) {
+                        image.classList.remove('hide');
+                    } else {
+                        image.classList.add('hide');
+                    }
+                });
+            }
+
+
+            links.forEach((link) => { // loop through <a> tags and create click event on each 
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    switch (link.textContent) { // check name of link clicked 
+                        case "album 1": // link 1 text
+
+                            displayImage(imagesCollection, 'album 1'); //display images from album 1
+
+                            break;
+                        case "album 2": // link 2 text
+
+                            displayImage(imagesCollection, 'album 2'); //display images from album 2
+
+                            break;
+                        case "album 3": // link 3 text
+
+                            displayImage(imagesCollection, 'album 3'); //display images from album 3
+
+                            break;
+
+                        case "all": // // link 4 text - display all images at once
+
+                            imagesCollection.forEach((image) => {
+                                image.classList.remove('hide');
+                            });
+
+                            break;
+                    }
+
+                });
+            });
+
+        })();
+    </script>
+</body>
+
+</html>
