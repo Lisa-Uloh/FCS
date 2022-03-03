@@ -353,9 +353,9 @@
                                         <h2
                                             style=" font-size: 18px; text-align: center; color: #000000; font-weight: 500;">
                                             voluteer Form</h2>
-                                        <form action="mailForm.php" method="post" id="contact-form"
+                                        <form method="post" id="contact-form" data-netlify="true"
                                             style=" padding-left: 15%; padding-right: 15%;padding-bottom: 15%; padding-top: 6%;">
-
+                                            <input type="hidden" name="form-name" value="contact">
                                             <label style="color: #000000;">Name</label>
                                             <br>
                                             <input type="text" name="name" class="form-control"
@@ -973,6 +973,7 @@
 
         })
     </script>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <script>
         const constraints = {
